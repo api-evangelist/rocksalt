@@ -1,8 +1,18 @@
 aid: rocksalt
 name: Rocksalt
-description: Rocksalt is a company surfaced as a portfolio company of lightspeed-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Rocksalt is a B2B inbound and social-engagement platform, headquartered in
+  Redwood City, California and founded in 2023 by Arjun Moorthy (CEO), Anita
+  Moorthy (CMO), and Ajoy Sojan (CTO). The product helps founders, executives,
+  and subject-matter experts build visibility and win business on LinkedIn and
+  Reddit in roughly ten minutes a day: an AI-powered digest surfaces the
+  industry conversations worth joining, suggests personalized comments grounded
+  in the user's expertise, assists with post creation, and adds team
+  collaboration workflows plus analytics and HubSpot CRM sync. Rocksalt raised
+  seed funding from Lightspeed Venture Partners in 2025. It is a marketing SaaS
+  application delivered through a web app rather than a public developer API;
+  this profile was surfaced from the Lightspeed portfolio and enriched with
+  the company's public identity and web properties.
 url: https://raw.githubusercontent.com/api-evangelist/rocksalt/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +20,63 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.rocksalt.ai/hubfs/Rocksalt_Logo_Header.svg
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Marketing
+- Social Media
+- Sales Enablement
+- Content
+- Customer Relationship Management (CRM)
+- Artificial Intelligence
+- SaaS
 apis: []
+common:
+- type: DomainSecurity
+  url: security/rocksalt-domain-security.yml
+- type: Website
+  url: https://www.rocksalt.ai/
+- type: About
+  url: https://www.rocksalt.ai/about
+- type: Documentation
+  url: https://www.rocksalt.ai/rocksalt-help-documentation-and-product-guides
+- type: HelpCenter
+  url: https://www.rocksalt.ai/rocksalt-help-documentation-and-product-guides
+- type: Support
+  url: mailto:support@rocksalt.ai
+- type: Blog
+  url: https://blog.rocksalt.ai/
+- type: Pricing
+  url: https://www.rocksalt.ai/pricing
+- type: SignUp
+  url: https://on.rocksalt.ai/
+- type: Login
+  url: https://app.rocksalt.ai/login
+- type: TermsOfService
+  url: https://www.rocksalt.ai/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.rocksalt.ai/privacy-policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
