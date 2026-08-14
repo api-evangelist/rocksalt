@@ -34,7 +34,7 @@ accessModel:
 image: https://www.rocksalt.ai/hubfs/Rocksalt_Logo_Header.svg
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-08-13'
 tags:
 - Company
 - Marketing
@@ -60,8 +60,14 @@ common:
   url: mailto:support@rocksalt.ai
 - type: Blog
   url: https://blog.rocksalt.ai/
+- type: BlogRSS
+  url: https://blog.rocksalt.ai/rss.xml
 - type: Pricing
   url: https://www.rocksalt.ai/pricing
+- type: Plans
+  url: plans/rocksalt-plans-pricing.yml
+- type: LLMsTxt
+  url: llms/rocksalt-llms.txt
 - type: SignUp
   url: https://on.rocksalt.ai/
 - type: Login
@@ -76,7 +82,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 x-enrichment:
-  date: '2026-07-21'
-  status: nochange
-  artifacts_added: 0
+  date: '2026-08-13'
+  status: minimal
+  artifacts_added: 4
   pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Rocksalt ships only an end-user web app and browser extension — its full
+    37-URL sitemap has no developer path, api.rocksalt.ai and docs.rocksalt.ai
+    do not resolve in DNS, and app.rocksalt.ai answers 200 with the same SPA
+    HTML shell for /openapi.json and /.well-known/agent-card.json alike, so
+    those 200s are soft-404s rather than a hidden contract.
+  evidence:
+  - url: https://www.rocksalt.ai/sitemap.xml
+    status: 200
+  - url: https://www.rocksalt.ai/openapi.json
+    status: 404
+  - url: https://www.rocksalt.ai/llms.txt
+    status: 404
+  - url: https://www.rocksalt.ai/.well-known/agent-card.json
+    status: 404
+  - url: https://www.rocksalt.ai/rocksalt-help-documentation-and-product-guides
+    status: 200
+  checked: '2026-08-13'
