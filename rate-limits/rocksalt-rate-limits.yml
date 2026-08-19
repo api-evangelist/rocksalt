@@ -1,0 +1,26 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.rocksalt.ai/rocksalt-help-documentation-and-product-guides
+limit_count: 0
+note: >-
+  Rocksalt publishes no rate limits because it publishes no API. The help
+  centre, the pricing page and the full 37-URL sitemap were read and none
+  documents an API, an API key, a request quota, a throttling policy or any
+  RateLimit/X-RateLimit/Retry-After response header. The only usage ceilings
+  Rocksalt states are product entitlements (seat counts, "unlimited content
+  and image generation" on Pro) and those are recorded in
+  plans/rocksalt-plans-pricing.yml, not here. This is an honest zero, not an
+  unchecked field — no RateLimits pointer is wired into apis.yml, because
+  there is no API surface for a limit to apply to.
+limits: []
+headers: []
+x-evidence:
+- url: https://www.rocksalt.ai/rocksalt-help-documentation-and-product-guides
+  status: 200
+  fetched: '2026-08-13'
+- url: https://www.rocksalt.ai/pricing
+  status: 200
+  fetched: '2026-08-13'
+- url: https://www.rocksalt.ai/sitemap.xml
+  status: 200
+  fetched: '2026-08-13'

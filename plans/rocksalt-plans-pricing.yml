@@ -1,0 +1,127 @@
+generated: '2026-08-13'
+method: searched
+source: https://www.rocksalt.ai/pricing
+currency: USD
+billing_period: month
+plan_count: 5
+note: >-
+  Rocksalt publishes a full self-serve price list for its two products —
+  Rocksalt for LinkedIn (Free, Essentials, Pro, Teams) and Rocksalt for Reddit
+  (Reddit Pro). These are end-user seat subscriptions to the web application;
+  no tier includes or mentions API access, API keys, or a developer plan.
+  A 14-day free trial of the full LinkedIn + Reddit Pro product applies to all
+  paid plans, and accounts drop to the Free SKU at the end of the trial if no
+  paid plan is chosen. Billing is monthly with no long-term contract;
+  cancellation takes effect at the end of the billing month.
+plans:
+- name: LinkedIn Free
+  product: Rocksalt for LinkedIn
+  price: 0
+  currency: USD
+  period: month
+  seats: null
+  audience: Professionals who want to stay aware of their industry
+  included:
+  - Brief of top 5 relevant industry discussions, every 2 weeks
+  - Email digest personalized to your topics and industry influencers
+  excluded:
+  - Daily brief of relevant industry discussions as they happen
+  - Niche influencer search engine
+  - Commenting assistance based on your style and real-time knowledge
+  - Trending post ideas and post creation workflow including SMS interface
+  - Content analytics, audience engagement, CRM sync
+- name: LinkedIn Essentials
+  product: Rocksalt for LinkedIn
+  price: 25
+  currency: USD
+  period: month
+  seats: null
+  price_note: >-
+    The pricing page renders three responsive copies of the plan grid; the
+    Essentials tile shows $49 per month in one copy and $25 per month in the
+    other two, which is the monthly-vs-annual billing toggle rendered into
+    static HTML. Recorded as $25 with the $49 figure preserved here rather
+    than picking one silently. Verify against the live toggle before quoting.
+  price_alternate: 49
+  audience: >-
+    Professionals who want to monitor and engage with buyer conversations as
+    they happen
+  included:
+  - Dynamic feed and daily briefing of relevant buyer discussions
+  - Prioritized discussions and recommended actions
+  - Original comment ideas from your Super You avatar
+  - Massive B2B profile database to find relevant niche influencers
+  - Automatic monthly refresh of followed influencers based on your engagement
+  excluded:
+  - Trending post ideas and post creation workflow
+  - Analytics and HubSpot CRM integration
+- name: LinkedIn Pro
+  product: Rocksalt for LinkedIn
+  price: 99
+  currency: USD
+  period: month
+  seats: 2
+  additional_seat_price: 50
+  additional_seat_period: month
+  recommended: true
+  audience: Founders and CEOs who need to post and engage consistently on LinkedIn
+  included:
+  - Everything in LinkedIn Essentials
+  - Super You avatar with your unique style and real-time background knowledge
+  - SMS/WhatsApp interface for rapid idea capture and post creation
+  - Real-time content mix analysis and daily post suggestions
+  - Post and audience analytics for individuals and teams
+  - CRM integration and dynamic list segmentation
+  - Monitor private Slack communities for relevant discussions
+  - Unlimited content and image generation with Super You agent
+- name: LinkedIn Teams
+  product: Rocksalt for LinkedIn
+  price: 299
+  currency: USD
+  period: month
+  seats: 5
+  additional_seat_price: 50
+  additional_seat_period: month
+  audience: >-
+    Companies where marketing is driving executive visibility on LinkedIn
+  included:
+  - Everything in LinkedIn Pro
+  - Monthly strategy session with the Rocksalt co-founder and CMO
+  - Influencer selection strategy and outreach plan
+  - Thematic focus and post ideas tailored to each user
+  - Dark-funnel measurement strategy and analysis
+- name: Reddit Pro
+  product: Rocksalt for Reddit
+  price: 99
+  currency: USD
+  period: month
+  seats: 2
+  additional_seat_price: 50
+  additional_seat_period: month
+  audience: Teams that want to raise their visibility in LLM answers
+  included:
+  - Karma building strategies for novices
+  - Daily prioritized threads to comment on
+  - Subreddit-specific commenting assistance to build standing
+  - Super You AI avatar with your style and background knowledge
+  - Subreddit recommendations based on LLM visibility
+  - Post ideas based on LLM visibility gaps
+  - Safe commenting on high LLM visibility threads
+  - Post, comment and karma analytics for individuals and teams
+  - Joint ideas board and shared writing center
+trial:
+  available: true
+  length_days: 14
+  scope: Full LinkedIn + Reddit Pro product
+  falls_back_to: LinkedIn Free
+  reminder: Email 7 days before the trial ends
+api_access:
+  offered: false
+  note: >-
+    No plan on the published price list includes API access, API keys, request
+    quotas or a developer tier. Rocksalt is sold as a seat-based end-user
+    application.
+x-evidence:
+- url: https://www.rocksalt.ai/pricing
+  status: 200
+  fetched: '2026-08-13'

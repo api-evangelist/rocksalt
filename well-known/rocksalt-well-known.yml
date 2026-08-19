@@ -1,0 +1,132 @@
+generated: '2026-08-13'
+method: probed
+source: live GET of the RFC 8615 /.well-known/ surface on every Rocksalt host
+note: >-
+  No Rocksalt host serves a real /.well-known/ document. The marketing site
+  (www.rocksalt.ai, HubSpot CMS) and the blog return a clean 404 for every path.
+  The application host (app.rocksalt.ai) and the onboarding host (on.rocksalt.ai)
+  are single-page applications whose catch-all route answers HTTP 200 with the
+  SPA HTML shell for EVERY path probed — including /openapi.json and
+  /.well-known/agent-card.json — so those 200s are soft-404s, not documents.
+  They are recorded below as status 200 with document: false. No WellKnown,
+  SecurityTxt, APICatalog or AgentCard pointer is emitted for this provider.
+hosts:
+- host: https://www.rocksalt.ai
+  kind: marketing site (HubSpot CMS)
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    document: false
+  - path: /.well-known/openid-configuration
+    status: 404
+    document: false
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    document: false
+  - path: /.well-known/api-catalog
+    status: 404
+    document: false
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    document: false
+  - path: /.well-known/agent-card.json
+    status: 404
+    document: false
+  - path: /.well-known/agent.json
+    status: 404
+    document: false
+- host: https://app.rocksalt.ai
+  kind: web application (single-page app)
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    document: false
+    body: HTML SPA shell (soft 404 — catch-all route)
+  - path: /.well-known/openid-configuration
+    status: 200
+    document: false
+    body: HTML SPA shell (soft 404 — catch-all route)
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    document: false
+    body: HTML SPA shell (soft 404 — catch-all route)
+  - path: /.well-known/api-catalog
+    status: 200
+    document: false
+    body: HTML SPA shell (soft 404 — catch-all route)
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    document: false
+    body: HTML SPA shell (soft 404 — catch-all route)
+  - path: /.well-known/agent-card.json
+    status: 200
+    document: false
+    body: HTML SPA shell (soft 404 — catch-all route)
+  - path: /.well-known/agent.json
+    status: 200
+    document: false
+    body: HTML SPA shell (soft 404 — catch-all route)
+- host: https://on.rocksalt.ai
+  kind: onboarding application (single-page app)
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    document: false
+    body: HTML SPA shell (soft 404 — catch-all route)
+  - path: /.well-known/agent-card.json
+    status: 200
+    document: false
+    body: HTML SPA shell (soft 404 — catch-all route)
+  - path: /.well-known/agent.json
+    status: 200
+    document: false
+    body: HTML SPA shell (soft 404 — catch-all route)
+  - path: /.well-known/api-catalog
+    status: 200
+    document: false
+    body: HTML SPA shell (soft 404 — catch-all route)
+- host: https://blog.rocksalt.ai
+  kind: blog (HubSpot CMS)
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    document: false
+  - path: /.well-known/agent-card.json
+    status: 404
+    document: false
+  - path: /.well-known/api-catalog
+    status: 404
+    document: false
+contract_discovery:
+  note: >-
+    STEP 0b contract discovery was run against every host. No REST OpenAPI,
+    GraphQL SDL, MCP endpoint or A2A agent card was found.
+  probes:
+  - path: /openapi.json
+    hosts_probed: [www.rocksalt.ai, app.rocksalt.ai, on.rocksalt.ai, blog.rocksalt.ai, rocksalt.ai]
+    result: 404 on the CMS hosts; HTML SPA shell (soft 200) on the app hosts
+  - path: /swagger.json
+    hosts_probed: [www.rocksalt.ai, app.rocksalt.ai, on.rocksalt.ai, blog.rocksalt.ai, rocksalt.ai]
+    result: 404 on the CMS hosts; HTML SPA shell (soft 200) on the app hosts
+  - path: /api-docs
+    hosts_probed: [www.rocksalt.ai, app.rocksalt.ai, on.rocksalt.ai, blog.rocksalt.ai, rocksalt.ai]
+    result: 404 on the CMS hosts; HTML SPA shell (soft 200) on the app hosts
+  - host: api.rocksalt.ai
+    result: NXDOMAIN — no DNS record
+  - host: docs.rocksalt.ai
+    result: NXDOMAIN — no DNS record
+  - host: developer.rocksalt.ai
+    result: NXDOMAIN — no DNS record
+  - host: developers.rocksalt.ai
+    result: NXDOMAIN — no DNS record
+  sitemap:
+    url: https://www.rocksalt.ai/sitemap.xml
+    status: 200
+    urls: 37
+    developer_paths: 0
+    note: >-
+      The full published sitemap is 37 marketing, help and landing pages. It
+      contains no /api, /developers, /docs, /reference, /webhooks or /status
+      path. The only integration page is a guide to connecting HubSpot CRM to
+      Rocksalt, which describes Rocksalt consuming HubSpot's API — not an API
+      Rocksalt publishes.
