@@ -67,6 +67,8 @@ tags_raw:
 - Social-Media
 apis: []
 common:
+- type: RateLimits
+  url: rate-limits/rocksalt-rate-limits.yml
 - type: DomainSecurity
   url: security/rocksalt-domain-security.yml
 - type: Website
