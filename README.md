@@ -64,6 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Rocksalt is a company surfaced as a portfolio company of lightspeed-venture-partners and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Rocksalt is a B2B inbound and social-engagement platform, headquartered in Redwood City, California and founded in 2023 by Arjun Moorthy (CEO), Anita Moorthy (CMO), and Ajoy Sojan (CTO). The product helps founders, executives, and subject-matter experts build visibility and win business on LinkedIn and Reddit in roughly ten minutes a day: an AI-powered digest surfaces the industry conversations worth joining, suggests personalized comments grounded in the user's expertise, assists with post creation, and adds team collaboration workflows plus analytics and HubSpot CRM sync. Rocksalt raised seed funding from Lightspeed Venture Partners in 2025. It is a marketing SaaS application delivered through a web app rather than a public developer API; this profile was surfaced from the Lightspeed portfolio and enriched with the company's public identity and web properties.
 
-Backed by: lightspeed-venture-partners
+**Areas:** Company · Marketing · Social Media · Sales Enablement · Content · Customer Relationship Management (CRM) · Artificial Intelligence · Software-as-a-Service
+
+## Rocksalt on APIs.io
+
+Everything profiled for Rocksalt is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/rocksalt/](https://apis.io/providers/rocksalt/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Rocksalt Domain Security](https://apis.io/security/rocksalt/rocksalt-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Rocksalt Plans Pricing](https://apis.io/plans/rocksalt/rocksalt-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Rocksalt Rate Limits](https://apis.io/rate-limits/rocksalt/rocksalt-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.rocksalt.ai/)
+- [Documentation](https://www.rocksalt.ai/rocksalt-help-documentation-and-product-guides)
+- [Pricing](https://www.rocksalt.ai/pricing)
+- [Sign up](https://on.rocksalt.ai/)
+- [Blog](https://blog.rocksalt.ai/)
+- [Terms of service](https://www.rocksalt.ai/terms-of-use)
+- [Privacy policy](https://www.rocksalt.ai/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 21.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 69.7 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/rocksalt/](https://apis.io/providers/rocksalt/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Rocksalt: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/rocksalt/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
